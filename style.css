@@ -1,14 +1,30 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    background-color: rgba(12, 37, 90, 0.87);
+}
+
+.header,
+.sec1 {
+    padding: 0 100px;
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: darkblue;
+    background-color: rgba(12, 37, 90, 0.87);
     color: white;
+    flex-shrink: 0;
+}
+
+.header-logo {
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.header-links {
     flex-shrink: 0;
 }
 
@@ -22,22 +38,194 @@ a {
     color: white;
 }
 
-li {
-    padding: 0 10px;
+.link2 {
+    padding: 0 20px;
 }
 
 .sec1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    background-color:  darkblue;
+    color: white;
+    padding-top: 70px;
+    padding-bottom:70px;
 }
 
 .sec1-1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-shrink: 0;
 }
 
-.sec1-2 {
+.sec1-1-title {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 5px 0;
+}
+
+.sec1-1-text {
+    padding-bottom: 10px;
+}
+
+/*.sec1-2 {
     text-align: center;
+    max-width: 50%;
+    background-color: rgb(47, 47, 121);
+    padding: 50px;
+}*/
+
+.image-section {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+
+    flex-shrink: 0;
+  }
+
+  .placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #4e4e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+
+  .container {
+    width: 100%; /* Di default il contenitore occupa tutta la larghezza */
+    max-width: 1200px; /* Dimensione massima del contenuto */
+    margin: auto; /* Centra automaticamente solo se permesso */
+    background-color: white;
+}
+
+@media (min-width: 2000px) {
+    .container {
+        margin: 0 auto; /* Centra il contenitore */
+    }
+}
+
+
+.sec2 {
+    display: flex;
+    background-color: coral;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.sec2-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px
+}
+
+.sec2-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.sec2-shape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec2-text {
+    max-width: 100px;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin: 10px;
+}
+
+
+.box {
+    background-color: white; /* Colore interno bianco */
+    border: 2px solid blue; /* Bordo blu di 2px */
+    width: 100px; /* Larghezza del riquadro */
+    height: 100px; /* Altezza del riquadro */
+    border-radius: 5px; /* (Opzionale) Angoli leggermente arrotondati */
+}
+  
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    background-color: rgb(233, 230, 230);
+}
+
+.quote {
+    max-width: 70%;
+    font-size: 50px;
+    color: rgb(83, 82, 82);
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.name {
+    max-width: 80%;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+    margin-left: 40%;
+}
+
+.sec4 {
+    display: flex;
+}
+
+.sec4-container {
+    display: flex;
+    background-color: darkblue;
+    color: white;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.text1 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.text2 {
+    
+}
+
+.sec4-button button {
+    width: 90px;
+    height: 30px;
+    border-color: white;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: rgba(12, 37, 90, 0.87);
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
